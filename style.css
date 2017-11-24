@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  height: 70px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav__img{
+  float: left;
+  margin-left: 3em;
+}
+
+.nav__menu{
+  float: right;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-weight: 800;
+  font-family: 'Dosis', Arial, sans-serif  ;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3em;
+}
+
+.nav__menu .active{
+  color: #40c9cb;
+}
+
+.nav__menu li{
+  display: inline-block;
+  margin: 0.8em;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.hero-unit{
+  background: url("img/tylikowska_home.png")  top center no-repeat ;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero-unit__content{
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  line-height: 120px
+}
+.hero-unit__content span:last-child{
+  font-weight: 400;
+}
+.hero-unit__btn{
+  background-color: #31c5c7;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  padding: 0.6em 2em;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-family: "PT Sans";
+  outline-style: none;
+}
+h1{
+  margin-bottom: -30px;
+}
