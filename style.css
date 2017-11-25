@@ -1,42 +1,43 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-nav{
+/*---menu----------------*/
+
+nav {
   height: 70px;
   background-color: white;
   width: 100%;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav__img{
-  float: left;
+.nav__img {
   margin-left: 3em;
 }
 
-.nav__menu{
-  float: right;
+.nav__menu {
   text-transform: uppercase;
   list-style-type: none;
   font-weight: 800;
-  font-family: 'Dosis', Arial, sans-serif  ;
+  font-family: 'Dosis', Arial, sans-serif;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 3em;
 }
 
-.nav__menu .active{
-  color: #40c9cb;
+.nav__menu .active {
+  color: #191919;
 }
 
-.nav__menu li{
-  display: inline-block;
-  margin: 0.8em;
+.nav__menu li {
+  padding: 0.8em;
+  position: relative;
 }
 
 .nav__menu a {
@@ -44,8 +45,68 @@ nav{
   color: #717171;
 }
 
-.hero-unit{
-  background: url("img/tylikowska_home.png")  top center no-repeat ;
+.main__menu {
+  display: none;
+}
+
+.sub__menu {
+  margin-right: 3em;
+}
+
+li a {
+  background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+}
+
+li a:hover {
+  background-position: 0 0;
+  color: #191919;
+}
+
+@media screen and (min-width: 930px) {
+  .main__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;
+  }
+  .nav__menu--ham {
+    display: none;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .nav__img {
+    height: 50px;
+    width: 150px;
+    margin-left: 1em;
+  }
+  nav {
+    height: 50px;
+  }
+  .nav__menu {
+    height: 50px;
+    margin-right: 1em;
+  }
+}
+
+.show {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  border-top: 1px solid #313131;
+  border-bottom: 1px solid #313131;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*---hero unit------------------*/
+
+.hero-unit {
+  background: url("img/tylikowska_home.png") top center no-repeat;
   background-size: cover;
   height: 100vh;
   margin-top: 40px;
@@ -55,16 +116,19 @@ nav{
   color: #ffffff;
   text-transform: uppercase;
 }
-.hero-unit__content{
+
+.hero-unit__content {
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 60px;
   line-height: 120px
 }
-.hero-unit__content span:last-child{
+
+.hero-unit__content span:last-child {
   font-weight: 400;
 }
-.hero-unit__btn{
+
+.hero-unit__btn {
   background-color: #31c5c7;
   text-transform: uppercase;
   color: #fff;
@@ -75,6 +139,7 @@ nav{
   font-family: "PT Sans";
   outline-style: none;
 }
-h1{
+
+h1 {
   margin-bottom: -30px;
 }
