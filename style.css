@@ -36,7 +36,7 @@ nav {
 }
 
 .nav__menu li {
-  padding: 0.8em;
+  padding: 1.5em 0.8em;
   position: relative;
 }
 
@@ -53,16 +53,42 @@ nav {
   margin-right: 3em;
 }
 
-li a {
-  background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all .25s ease-in;
+.nav__temp {
+  flex-grow: 2;
 }
 
-li a:hover {
-  background-position: 0 0;
-  color: #191919;
+.main__menu .item{
+  position: relative;
+  align-self:stretch;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(220,220,220,0.5);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  z-index: -1000;
+}
+
+.main__menu div:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.fa-linkedin{
+  border-radius: 3px;
+  padding: 0.6em;
+  box-shadow: inset 0 0 0 0 #0077b5;
+  transition: all ease 0.5s;
+}
+.fa-linkedin:hover {
+    box-shadow: inset 0 3em 0 0 #0077b5;
+    color: #fff;
 }
 
 @media screen and (min-width: 930px) {
@@ -120,8 +146,8 @@ li a:hover {
 .hero-unit__content {
   text-align: center;
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 120px
+  font-size: 50px;
+  line-height: 100px
 }
 
 .hero-unit__content span:last-child {
@@ -134,10 +160,18 @@ li a:hover {
   color: #fff;
   border: none;
   padding: 0.6em 2em;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 1.4rem;
   font-family: "PT Sans";
   outline-style: none;
+  box-shadow: inset 0 0 0 0 #31302B;
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+}
+.hero-unit__btn:hover {
+    box-shadow: inset 0 3em 0 0 #31302B;
+    color: #fff;
 }
 
 h1 {
