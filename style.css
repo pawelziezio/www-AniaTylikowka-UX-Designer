@@ -57,9 +57,9 @@ nav {
   flex-grow: 2;
 }
 
-.main__menu .item{
+.main__menu .item {
   position: relative;
-  align-self:stretch;
+  align-self: stretch;
 }
 
 .overlay {
@@ -67,10 +67,10 @@ nav {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: rgba(220,220,220,0.5);
+  background-color: rgba(220, 220, 220, 0.5);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
   transition: .5s ease;
   z-index: -1000;
 }
@@ -80,15 +80,16 @@ nav {
   height: 100%;
 }
 
-.fa-linkedin{
-  border-radius: 3px;
+.fa-linkedin {
+  border-radius: 1px;
   padding: 0.6em;
   box-shadow: inset 0 0 0 0 #0077b5;
-  transition: all ease 0.5s;
+  transition: all ease 0.4s;
 }
+
 .fa-linkedin:hover {
-    box-shadow: inset 0 3em 0 0 #0077b5;
-    color: #fff;
+  box-shadow: inset 0 2.2em 0 0 #0077b5;
+  color: #fff;
 }
 
 @media screen and (min-width: 930px) {
@@ -134,7 +135,10 @@ nav {
 .hero-unit {
   background: url("img/tylikowska_home.png") top center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
+  max-height: 1200px;
+  min-height: 200px;
   margin-top: 40px;
   display: flex;
   align-items: center;
@@ -160,20 +164,204 @@ nav {
   color: #fff;
   border: none;
   padding: 0.6em 2em;
-  border-radius: 4px;
+  border-radius: 2px;
   font-size: 1.4rem;
   font-family: "PT Sans";
   outline-style: none;
   box-shadow: inset 0 0 0 0 #31302B;
   transition: all ease 0.3s;
   cursor: pointer;
-
 }
+
 .hero-unit__btn:hover {
-    box-shadow: inset 0 3em 0 0 #31302B;
-    color: #fff;
+  box-shadow: inset 0 3em 0 0 #31302B;
+  color: #fff;
 }
 
 h1 {
   margin-bottom: -30px;
+}
+
+/*-- info -------------------*/
+
+.info h2 {
+  color: #444;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  width: 10em;
+  padding: 2em 0;
+}
+
+.info header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6em;
+}
+
+.info__break {
+  text-align: center;
+}
+
+.info__break span {
+  display: inline-block;
+  content: '';
+  border-bottom: 0.2px solid #ccc;
+  width: 16%;
+  line-height: 1px;
+}
+
+.info__break i {
+  vertical-align: middle;
+  padding: 0 2em;
+  color: #ccc;
+}
+
+.info h3 {
+  color: #31c5c7;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  padding: 1.6em .4em .6em;
+}
+
+.info__text {
+  font-family: 'PT Sans';
+  font-size: .8rem;
+  color: #444;
+  font-weight: 400;
+}
+
+.info__text--1 {
+  text-align: right;
+  padding: .8em 10%;
+}
+
+.info__text--2 {
+  text-align: left;
+  padding: .8em 10%;
+}
+
+@media screen and (min-width: 600px) {
+  .info__text {
+    display: flex;
+  }
+  .info__text--1, .info__text--2 {
+    flex: 0 1 50%;
+    padding: 1.8em 2%;
+  }
+}
+
+/*--- info2 --------------*/
+
+.info2 {
+  background-color: #ebebeb;
+}
+
+.info2__question {
+  font-family: 'PT Sans';
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2em 0 0 0;
+}
+
+.info2__replay {
+  font-family: 'PT Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #31c5c7;
+  text-align: center;
+  font-size: 1.4em;
+  padding: .6em 0 .4em;
+}
+
+.info2__wrapper--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info2__icon {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #444;
+  padding: .6em;
+  margin: .4em;
+  transition: all 0.3s ease;
+}
+
+.info2__icon:hover {
+  box-shadow: 0 0 0 4px #ebebeb, 0 0 0 6px #31c5c7;
+  background-color: #31c5c7;
+}
+
+.info2__thumbnail h4 {
+  transition: all 0.3s ease;
+}
+
+.info2__thumbnail h4:hover {
+  color: #31c5c7;
+}
+
+.info2 h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #444;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.info2 p {
+  color: #444;
+  font-family: 'PT Sans', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  padding: 1.6em 1.4em 1.6em;
+}
+
+.info2__thumbnails {
+  display: flex;
+  padding: 1em 6% .8em;
+}
+
+.info2__wrapper {
+  max-width: 1060px;
+  margin: auto;
+}
+
+.info2__thumbnail {
+  padding: 0 2%;
+}
+
+/*--- banner --------------*/
+
+.banner {
+  height: 28vw;
+  background: url("img/vmtjgtt6mr8-chris-barbalis.jpg") top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 800px;
+  min-height: 200px;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h2 {
+  text-align: center;
+  letter-spacing: .06em;
 }

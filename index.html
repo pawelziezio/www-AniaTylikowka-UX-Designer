@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex, nofollow" />
   <title>AniaTylikowka - UX Designer</title>
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,800|Oswald|PT+Sans:700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,800|Oswald|PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -20,11 +21,26 @@
       <div class="nav__temp"></div>
 
       <ul class='nav__menu main__menu' id="mainMenu">
-        <div class="item"><li><a href="" class="active">Start</a></li><div class="overlay"></div></div>
-        <div class="item"><li><a href="">Proponuję Ci</a></li><div class="overlay"></div></div>
-        <div class="item"><li><a href="">O mnie</a></li><div class="overlay"></div></div>
-        <div class="item"><li><a href="">W świecie ux</a></li><div class="overlay"></div></div>
-        <div class="item"><li><a href="">Kontakt</a></li><div class="overlay"></div></div>
+        <div class="item">
+          <li><a href="" class="active">Start</a></li>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <li><a href="">Proponuję Ci</a></li>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <li><a href="">O mnie</a></li>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <li><a href="">W świecie ux</a></li>
+          <div class="overlay"></div>
+        </div>
+        <div class="item">
+          <li><a href="">Kontakt</a></li>
+          <div class="overlay"></div>
+        </div>
       </ul>
 
       <ul class="nav__menu sub__menu">
@@ -34,20 +50,80 @@
 
     </nav>
   </header>
-  <section class="hero-unit">
+
+<!-- --- hero-unit------------------- -->
+
+  <section class="hero-unit js-parallax-bg">
     <div class="hero-unit__content">
       <h1>
         <span><strong>Pomagamy tworzyć</strong></span>
         <br>
         <span>potrzebne i użyteczne rozwiązania</span>
       </h1>
-        <button class="hero-unit__btn">Skontaktuj się</button>
+      <button class="hero-unit__btn">Skontaktuj się</button>
     </div>
   </section>
+
+<!-- info ----------------------------- -->
+
+  <section class="info">
+    <header>
+      <h2> nie tylko ux</h2>
+    </header>
+    <div class="info__break"><span></span><i class="fa fa-heart" aria-hidden="true"></i><span></span></div>
+    <h3>projektowanie produktów i usług</h3>
+    <div class="info__text">
+      <p class="info__text--1">
+        Jak zaprojektować stronę lub aplikację?<br> Jak udoskonalić dotychczasowe działania?<br>Jakich funkcjonalności oczekuje użytkownik?
+      </p>
+      <p class="info__text--2">
+        Jak wygląda kontekst użycia produktu?<br>Jak stworzyć spójną ścieżkę doświadczeń klienta?<br> Czy potrzeba, którą ma zaspokoić usługa, faktycznie istnieje?
+      </p>
+    </div>
+  </section>
+
+<!-- --- info2 ------------------------- -->
+
+  <section class='info2'>
+    <h2 class='info2__question'>w jaki sposób?</h2>
+    <h2 class='info2__replay'><strong>rozmowy, pomysy i ich realizacja</strong></h2>
+    <div class='info2__wrapper'>
+      <div class='info2__thumbnails'>
+        <div class='info2__thumbnail'>
+          <div class='info2__wrapper--icon'>
+            <div class='info2__icon'><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+          </div>
+          <h4>DOŚWIADCZENIE</h4>
+          <p>Każdą pracę poprzedzam analizą potrzeb związanych z marką lub produktem. Proponuję rozwiązania dla Ciebie.</p>
+        </div>
+        <div class='info2__thumbnail'>
+          <div class='info2__wrapper--icon'>
+            <div class='info2__icon'><i class="fa fa-rocket" aria-hidden="true"></i></div>
+          </div>
+          <h4>ZAANGAŻOWANIE</h4>
+          <p>Niezbędne przy dobrej współpracy. Nawet pod presją czasu, przekłada się na realne korzyści dla Twojej usługi.</p>
+        </div>
+        <div class='info2__thumbnail'>
+          <div class='info2__wrapper--icon'>
+            <div class='info2__icon'><i class="fa fa-heart" aria-hidden="true"></i></div>
+          </div>
+          <h4>SATYSFAKCJA</h4>
+          <p>Przy tworzeniu projektów nie tracę z zasięgu wzroku możliwości i oczekiwań klienta. Dzięki temu wiem, że spełnimy założony cel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- --- banner ---------------- -->
+
+  <section class='banner js-parallax-bg'>
+    <h2>POSZUKUJĘ SKUTECZNYCH I UŻYTECZNYCH ROZWIĄZAŃ </h2>
+  </section>
+<!-- --------------------------------- -->
   <footer>
     <br><br><br><br><br><br><br><br><br><br>
   </footer>
-<script src="myScripts.js"></script>
+  <script src="myScripts.js"></script>
 </body>
 
 </html>
