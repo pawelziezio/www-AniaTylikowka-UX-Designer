@@ -10,11 +10,10 @@ navBars.addEventListener('click',function(){
 
 // --- parallax ----------------
 
-var images = document.querySelectorAll('.js-parallax-bg');
-console.log(images);
+const images = document.querySelectorAll('.js-parallax-bg');
 
 function getViewportHeight() {
-    var a = document.documentElement.clientHeight, b = window.innerHeight;
+    let a = document.documentElement.clientHeight, b = window.innerHeight;
     return a < b ? b : a;
 }
 
@@ -25,13 +24,13 @@ function getViewportScroll() {
     if(typeof pageYOffset != 'undefined') {
         return pageYOffset;
     }
-    var doc = document.documentElement;
+    let doc = document.documentElement;
     doc = doc.clientHeight ? doc : document.body;
     return doc.scrollTop;
 }
 
 function doParallax() {
-    var el, elOffset, elHeight,
+    let el, elOffset, elHeight,
         offset = getViewportScroll(),
         vHeight = getViewportHeight();
 
